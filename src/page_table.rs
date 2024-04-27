@@ -17,6 +17,7 @@ pub struct MemoryInfo {
 
 #[derive(Debug)]
 pub enum MapKernelError {
+    #[allow(dead_code)]
     Mapping(MapToError<Size4KiB>),
     MultipleTlsSegments,
 }
